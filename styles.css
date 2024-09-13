@@ -1,0 +1,88 @@
+/* Full height for the webpage */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background with dark blue and barely visible transparent dots */
+body {
+    background-color: #00132f; /* Deep dark night blue */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Page container */
+#page-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Allow it to adjust to page width */
+    height: 100%; /* Full height of the page */
+    max-width: 960px;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Styling for the h1 */
+h1 {
+    font-size: 2.5rem; /* Slightly smaller for better fit */
+    text-transform: uppercase;
+    color: #ff6347;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-top: 10px; /* Reduced margin */
+    margin-bottom: 10px;
+}
+
+/* Button group styling */
+.button-group {
+    margin-bottom: 10px; /* Space between buttons and grid */
+}
+
+/* Flexbox container for the grid */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vmin; /* Responsive width based on viewport size */
+    height: 80vmin; /* Same as width to ensure square shape */
+    border: 2px solid purple;
+    background-color: #b0c4de;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Styling for all buttons */
+.button-group .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px; /* Slightly smaller for better fit */
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active button styling with a double border */
+.button-group .button.active {
+    border: 3px double #ff6347; /* Double border to indicate active state */
+}
+
+/* Special styling for reset button */
+#reset {
+    background-color: #f44336;
+    font-weight: bold;
+}
+
+.button:hover, #reset:hover {
+    background-color: rgba(128, 128, 128, 0.5); /* Gray with 50% transparency */
+}
+
+
